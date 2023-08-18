@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import { useRoutes } from 'react-router-dom';
-import { Link } from 'react-router-dom'; 
+import { Outlet, Link } from 'react-router-dom'; 
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,13 +12,14 @@ function App() {
 		<>
 			<div>
 				<nav>
-					<Link to="/AddCreator">Add Creator</Link>
+					<Link to="/AddCreator">Add Creator</Link> |{""}
 					<Link to="/DeleteCreator">Delete Creator</Link>
 					<Link to="/EditCreator">Edit Creator</Link>
 					<Link to="/ViewCreator">View Creator</Link>
 					<Link to="/ShowCreators">Show all Creators</Link>
 					<Link to="/Home">Home</Link>
 				</nav>
+        <Outlet />
 				<a href="https://vitejs.dev" target="_blank">
 					<img
 						src={viteLogo}
