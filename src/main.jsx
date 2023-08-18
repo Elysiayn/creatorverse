@@ -12,18 +12,16 @@ import showCreators from './routes/showCreators.jsx';
 import home from './routes/home.jsx';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-	// <React.StrictMode>
 	<BrowserRouter>
 		<Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/AddCreator" element={<addCreator />} />
-      <Route path="/DeleteCreator" element={<deleteCreator />} />
-      <Route path="/EditCreator" element={<editCreator />} />
-      <Route path="/ViewCreator" element={<viewCreator />} />
-      <Route path="/ShowCreators" element={<showCreators />} />
-      <Route path="/Home" element={<home />} />
-			{/* <App /> */}
+      <Route path="/" element={<App />}>
+        <Route path="/AddCreator" element={<addCreator />} />
+        <Route path="/DeleteCreator" element={<deleteCreator />} />
+        <Route path="/EditCreator" element={<editCreator />} />
+        <Route path="/ViewCreator" element={<viewCreator />} />
+        <Route path="/ShowCreators" element={<showCreators />} />
+        <Route path="/Home" element={<home />} />
+      </Route>
 		</Routes>
-	</BrowserRouter>
-	// </React.StrictMode>,
+	</BrowserRouter>,
 );
