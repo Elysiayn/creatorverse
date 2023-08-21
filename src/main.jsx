@@ -13,10 +13,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 	<BrowserRouter>
 		<Routes>
       <Route path="/" element={<App />}>
-        <Route path="AddCreator" element={<addCreator />} />
-        <Route path="EditCreator" element={<editCreator />} />
-        <Route path="ViewCreator" element={<viewCreator />} />
-        <Route path="ShowCreators" element={<showCreators />} />
+        <Route path="addCreator" element={<addCreator />} />
+        <Route path="editCreator" element={<editCreator />} />
+        <Route path="viewCreator" element={<viewCreator />} />
+        <Route path="showCreators" element={<showCreators />} />
         <Route
           path="*" 
           element={
